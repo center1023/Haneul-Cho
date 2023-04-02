@@ -1,0 +1,117 @@
+<html>
+    <head>
+        <style>
+         /* http://meyerweb.com/eric/tools/css/reset/ 
+            v2.0 | 20110126
+            License: none (public domain)
+         */
+
+         /*글씨체 불러오기*/
+         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap'); /*글씨체 불러오는 링크, font-family: 'Noto Sans KR', sans-serif;*/
+         @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap'); /*font-family: 'Edu NSW ACT Foundation', cursive;*/
+         @import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Noto+Sans+KR&display=swap'); /*글씨체 불러오는 링크, font-family: 'Delicious Handrawn', cursive;*/
+         @import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Delicious+Handrawn&family=Noto+Sans+KR&display=swap'); /*글씨체 불러오는 링크, font-family: 'Alkatra', cursive;*/
+         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Lepcha&display=swap'); /*글씨체 불러오는 링크, font-family: 'Noto Sans Lepcha', sans-serif;*/
+         @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap'); /*글씨체 불러오는 링크, font-family: 'Edu NSW ACT Foundation', cursive;*/
+
+         *{box-sizing:border-box}
+
+         html, body, div, span, applet, object, iframe,
+         h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+         a, abbr, acronym, address, big, cite, code,
+         del, dfn, em, img, ins, kbd, q, s, samp,
+         small, strike, strong, sub, sup, tt, var,
+         b, u, i, center,
+         dl, dt, dd, ol, ul, li,
+         fieldset, form, label, legend,
+         table, caption, tbody, tfoot, thead, tr, th, td,
+         article, aside, canvas, details, embed, 
+         figure, figcaption, footer, header, hgroup, 
+         menu, nav, output, ruby, section, summary,
+         time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+         }
+         /* HTML5 display-role reset for older browsers */
+         article, aside, details, figcaption, figure, 
+         footer, header, hgroup, menu, nav, section {
+            display: block;
+         }
+         body {
+            line-height: 1;
+            font-size: 45px; /*여기를 변경하면 글자크기가 바뀜: 여기는 총괄적인 부분을 다룸. 세부적으로 글자사이즈를 안정해주면 이 설정을 따름*/
+            font-family: 'Noto Sans KR', sans-serif; /*여기를 변경하면 글씨체가 바뀜: 여기는 총괄적인 부분을 다룸. 세부적으로 글씨체를 안정해주면 이 설정을 따름*/
+         }
+         ol, ul {
+            list-style: none;
+         }
+         blockquote, q {
+            quotes: none;
+         }
+         blockquote:before, blockquote:after,
+         q:before, q:after {
+            content: '';
+            content: none;
+         }
+         table {
+            border-collapse: collapse;
+            border-spacing: 0;
+         }
+        </style>
+      
+        <style>
+          
+            .box1 {
+                width: 100vw; /*여기를 변경하면 외부 박스 크기가 바뀜*/
+                height: 100vh; /*여기를 변경하면 외부 박스 크기가 바뀜*/
+                background-color: #aaa; /*여기를 변경하면 외부 박스 색상이 바뀜*/
+                display: flex;
+                font-family: 'Edu NSW ACT Foundation', cursive;
+                font-size: 15px;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .box2 {
+                width: 200px; /*여기를 변경하면 내부 박스 크기가 바뀜*/
+                height: 200px; /*여기를 변경하면 내부 박스 크기가 바뀜*/
+                background-color: #fff; /*여기를 변경하면 내부 박스 색상이 바뀜*/
+                display: flex;
+                font-family: 'Delicious Handrawn', cursive;
+                font-size: 30px;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;}
+
+            .box3 {
+                  width: 100px;
+                  height: 100px;
+                  background-color: #9a4b4b;
+                  display: flex;
+                  font-family: 'Edu NSW ACT Foundation', cursive;  
+                  font-size: 45px;                
+                  justify-content: center;
+                  align-items: center;
+                  flex-direction: column;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="box1">  <!--................ 1. box1의 시작 -->
+            <div class="box2">  <!--............ 2. box2의 시작 -->
+               <div class="box3">  <!--......... 3. box3의 시작 -->
+                  <span>Haneul Cho!!</span>  <!--. 4. box3 내부 들어갈 글자를 적으면 된다. <span></span>을 넣고 그 사이에 글을 쓰면 된다.-->
+               </div>  <!--......... 3. box3의 끝. 끝은 항상 </div>로 끝난다 -->
+               <span>Beuatiful!!!</span>
+            </div>  <!--............ 2. box2의 끝. 끝은 항상 </div>로 끝난다. 여기서 만약 box2에도 내용을 추가하고 싶으면 </div> 위에 <span></span>을 넣고 그 사이에 글을 쓰면 된다. 달아놓은 주석 참고 -->
+            <span>She's wonderful!!!</span>
+        </div>  <!--................ 1. box1의 끝. 끝은 항상 </div>로 끝난다. 여기서 만약 box1에도 내용을 추가하고 싶으면 </div> 위에 <span></span>을 넣고 그 사이에 글을 쓰면 된다. 달아놓은 주석 참고 -->
+
+    </body>
+</html> 
