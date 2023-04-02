@@ -1,16 +1,16 @@
-const express = require('express');
-const app = express();
-const path = require('path');
-const port = 3000;
+const express=require('express');
+const app=express();
+const path=require('path');
+const port=3000;
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname,'docs')));
 
-app.get('/', (req, res) => {
-    // res.send('Hello World!');
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+app.get('/',(req,res)=>{
+    res.sendFile(path.join(__dirname,'docs','index.html'));
 });
 
-app. listen(PORT, () => {
-  console.log(`Server is runnung on port ${PORT}`);
-  console. log('http://localhost:3000');
+app.listen(PORT,()=>{
+    console.log('http://localhost:3000');
 });
+
+
